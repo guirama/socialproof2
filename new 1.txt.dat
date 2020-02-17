@@ -1,0 +1,65 @@
+Get Provider icon
+Get template
+check paths
+set name font  size
+set url font size
+set comment font size
+set reviewer font size
+set name font name
+set URL font name
+set comment font name
+set reviewer font name
+get correct badge, font color
+get name line space
+get url lines space
+partition comment in to lines
+imagecreatetruecolor
+imagesavealpha
+imagecolorallocatealpha
+set imagesx
+set imagesy
+create badge image
+copy badge/imagecopyresampled
+create top image
+create middle image
+create bottom image
+set x top image
+set y top image
+copy top image
+set x middle image
+set y middle image
+set text font color / imagecolorallocate
+set text  font size
+set text line space
+calculate initial Y for comment
+split lines
+foreach line
+	create text box /imagettfbox
+	calculate text line width
+	calulate text line height
+	write line to image
+	increment y by text line space
+copy middle image
+create bottom image
+set x top image
+set y top image
+
+for name
+	split lines
+	create text box /imagettfbox
+	calculate text line width
+	calulate text line height
+	write line to image
+	increment y by text line space	
+for URL
+	create text box /imagettfbox
+	calculate text URL width
+	calulate text URL height
+	write URL to image
+imagesavealpha
+imagealphablending
+add logo
+
+
+
+

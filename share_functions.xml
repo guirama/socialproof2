@@ -1,0 +1,3599 @@
+<api>
+								<app_name>HOF</app_name>
+								<app_id>(Your app UAACS id)</app_id><functions><function id="( your function UAACS id)" name="spo_admins_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_admins/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_admins_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_admins/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><admin_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </admin_id><admin_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </admin_name><username>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </username><password>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </password><email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </email></query_string_vars></function><function id="( your function UAACS id)" name="spo_admins_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_admins/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_admins_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_admins/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_apsl_users_social_profile_details_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_apsl_users_social_profile_details/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_apsl_users_social_profile_details_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_apsl_users_social_profile_details/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><provider_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </provider_name><identifier>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </identifier><unique_verifier>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </unique_verifier><email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </email><email_verified>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </email_verified><first_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </first_name><last_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </last_name><profile_url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </profile_url><website_url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </website_url><photo_url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </photo_url><display_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </display_name><description>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </description><gender>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </gender><language>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </language><age>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </age><birthday>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </birthday><birthmonth>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </birthmonth><birthyear>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </birthyear><phone>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </phone><address>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </address><country>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </country><region>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </region><city>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </city><zip>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </zip></query_string_vars></function><function id="( your function UAACS id)" name="spo_apsl_users_social_profile_details_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_apsl_users_social_profile_details/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_apsl_users_social_profile_details_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_apsl_users_social_profile_details/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_client_preferences_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_client_preferences/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_client_preferences_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_client_preferences/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><pref_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </pref_id><client_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </client_id><so_review_st>
+												<display_name></display_name>
+												<data_type>tinyint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </so_review_st><my_so_reviews>
+												<display_name></display_name>
+												<data_type>tinyint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </my_so_reviews><appointments>
+												<display_name></display_name>
+												<data_type>tinyint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </appointments><calls>
+												<display_name></display_name>
+												<data_type>tinyint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </calls><other_proofs>
+												<display_name></display_name>
+												<data_type>tinyint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </other_proofs><bg_color>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </bg_color><color>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </color></query_string_vars></function><function id="( your function UAACS id)" name="spo_client_preferences_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_client_preferences/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_client_preferences_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_client_preferences/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_client_reviews_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_client_reviews/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_client_reviews_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_client_reviews/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </id><review_id>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </review_id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><rating>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </rating><user_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_name><comment>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment><provider_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </provider_name><profile_link>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </profile_link><created_on>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </created_on></query_string_vars></function><function id="( your function UAACS id)" name="spo_client_reviews_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_client_reviews/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_client_reviews_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_client_reviews/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_clients_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_clients/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_clients_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_clients/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><client_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </client_id><client_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </client_name><username>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </username><password>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </password><practice_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </practice_name><website>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </website><address>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </address><email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </email><phone>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </phone><gmr_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </gmr_id><app_form_id>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </app_form_id><call_tracker>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </call_tracker><dr_img>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </dr_img><dr_logo>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </dr_logo></query_string_vars></function><function id="( your function UAACS id)" name="spo_clients_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_clients/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_clients_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_clients/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_commentmeta_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_commentmeta/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_commentmeta_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_commentmeta/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><meta_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_id><comment_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_id><meta_key>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_key><meta_value>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_value></query_string_vars></function><function id="( your function UAACS id)" name="spo_commentmeta_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_commentmeta/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_commentmeta_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_commentmeta/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_comments_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_comments/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_comments_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_comments/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><comment_ID>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_ID><comment_post_ID>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_post_ID><comment_author>
+												<display_name></display_name>
+												<data_type>tinytext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_author><comment_author_email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_author_email><comment_author_url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_author_url><comment_author_IP>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_author_IP><comment_date>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_date><comment_date_gmt>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_date_gmt><comment_content>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_content><comment_karma>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_karma><comment_approved>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_approved><comment_agent>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_agent><comment_type>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_type><comment_parent>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_parent><user_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id></query_string_vars></function><function id="( your function UAACS id)" name="spo_comments_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_comments/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_comments_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_comments/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_custom_reviews_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_custom_reviews/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_custom_reviews_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_custom_reviews/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><review_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </review_id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><rating>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </rating><reviewer_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </reviewer_name><reviewer_email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </reviewer_email><reviewer_phone>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </reviewer_phone><review>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </review><provider_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </provider_name><profile_link>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </profile_link><created_on>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </created_on></query_string_vars></function><function id="( your function UAACS id)" name="spo_custom_reviews_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_custom_reviews/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_custom_reviews_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_custom_reviews/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_hof_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_hof/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_hof_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_hof/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><hof_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </hof_id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><gmr_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </gmr_id><dfm_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </dfm_id></query_string_vars></function><function id="( your function UAACS id)" name="spo_hof_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_hof/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_hof_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_hof/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_hof_banners_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_hof_banners/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_hof_banners_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_hof_banners/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><banner_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </banner_id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><hof_review_id>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </hof_review_id><url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </url><template_id>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </template_id><created_on>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </created_on><dfm_date>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </dfm_date><tagline>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </tagline><banner_created_on>
+												<display_name></display_name>
+												<data_type>timestamp</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </banner_created_on></query_string_vars></function><function id="( your function UAACS id)" name="spo_hof_banners_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_hof_banners/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_hof_banners_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_hof_banners/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_links_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_links/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_links_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_links/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><link_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_id><link_url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_url><link_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_name><link_image>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_image><link_target>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_target><link_description>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_description><link_visible>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_visible><link_owner>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_owner><link_rating>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_rating><link_updated>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_updated><link_rel>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_rel><link_notes>
+												<display_name></display_name>
+												<data_type>mediumtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_notes><link_rss>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </link_rss></query_string_vars></function><function id="( your function UAACS id)" name="spo_links_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_links/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_links_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_links/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_options_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_options/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_options_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_options/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><option_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </option_id><option_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </option_name><option_value>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </option_value><autoload>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </autoload></query_string_vars></function><function id="( your function UAACS id)" name="spo_options_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_options/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_options_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_options/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_popup_reviews_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_popup_reviews/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_popup_reviews_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_popup_reviews/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><review_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </review_id><id>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><rating>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </rating><reviewer_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </reviewer_name><reviewer_email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </reviewer_email><reviewer_image>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </reviewer_image><review>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </review><provider_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </provider_name><profile_link>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </profile_link><created_on>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </created_on><approved>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </approved></query_string_vars></function><function id="( your function UAACS id)" name="spo_popup_reviews_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_popup_reviews/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_popup_reviews_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_popup_reviews/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_postmeta_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_postmeta/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_postmeta_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_postmeta/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><meta_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_id><post_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_id><meta_key>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_key><meta_value>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_value></query_string_vars></function><function id="( your function UAACS id)" name="spo_postmeta_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_postmeta/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_postmeta_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_postmeta/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_posts_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_posts/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_posts_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_posts/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><ID>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </ID><post_author>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_author><post_date>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_date><post_date_gmt>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_date_gmt><post_content>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_content><post_title>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_title><post_excerpt>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_excerpt><post_status>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_status><comment_status>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_status><ping_status>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </ping_status><post_password>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_password><post_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_name><to_ping>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </to_ping><pinged>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </pinged><post_modified>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_modified><post_modified_gmt>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_modified_gmt><post_content_filtered>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_content_filtered><post_parent>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_parent><guid>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </guid><menu_order>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </menu_order><post_type>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_type><post_mime_type>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_mime_type><comment_count>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment_count></query_string_vars></function><function id="( your function UAACS id)" name="spo_posts_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_posts/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_posts_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_posts/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_proofs_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_proofs/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_proofs_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_proofs/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><proof_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </proof_id><client_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </client_id><image>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </image><comment>
+												<display_name></display_name>
+												<data_type>text</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </comment><status>
+												<display_name></display_name>
+												<data_type>tinyint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </status></query_string_vars></function><function id="( your function UAACS id)" name="spo_proofs_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_proofs/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_proofs_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_proofs/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_term_relationships_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_term_relationships/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_term_relationships_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_term_relationships/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><object_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </object_id><term_taxonomy_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_taxonomy_id><term_order>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_order></query_string_vars></function><function id="( your function UAACS id)" name="spo_term_relationships_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_term_relationships/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_term_relationships_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_term_relationships/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_term_taxonomy_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_term_taxonomy/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_term_taxonomy_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_term_taxonomy/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><term_taxonomy_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_taxonomy_id><term_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_id><taxonomy>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </taxonomy><description>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </description><parent>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </parent><count>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </count></query_string_vars></function><function id="( your function UAACS id)" name="spo_term_taxonomy_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_term_taxonomy/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_term_taxonomy_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_term_taxonomy/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_termmeta_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_termmeta/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_termmeta_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_termmeta/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><meta_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_id><term_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_id><meta_key>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_key><meta_value>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_value></query_string_vars></function><function id="( your function UAACS id)" name="spo_termmeta_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_termmeta/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_termmeta_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_termmeta/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_terms_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_terms/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_terms_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_terms/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><term_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_id><name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </name><slug>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </slug><term_group>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </term_group></query_string_vars></function><function id="( your function UAACS id)" name="spo_terms_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_terms/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_terms_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_terms/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_usermeta_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_usermeta/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_usermeta_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_usermeta/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><umeta_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </umeta_id><user_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><meta_key>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_key><meta_value>
+												<display_name></display_name>
+												<data_type>longtext</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </meta_value></query_string_vars></function><function id="( your function UAACS id)" name="spo_usermeta_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_usermeta/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_usermeta_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_usermeta/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_userrecommend_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_userrecommend_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><recommend_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </recommend_id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </name><ip>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </ip><date>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </date></query_string_vars></function><function id="( your function UAACS id)" name="spo_userrecommend_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_userrecommend_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_userrecommend_friend_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend_friend/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_userrecommend_friend_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend_friend/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><recommend_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </recommend_id><user_id>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_id><name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </name><friend_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </friend_name><friend_email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </friend_email><friend_mobile>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </friend_mobile><ip>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </ip><date>
+												<display_name></display_name>
+												<data_type>date</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </date></query_string_vars></function><function id="( your function UAACS id)" name="spo_userrecommend_friend_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend_friend/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_userrecommend_friend_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_userrecommend_friend/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_users_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_users/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_users_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_users/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><ID>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </ID><user_login>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_login><user_pass>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_pass><user_nicename>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_nicename><user_email>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_email><user_url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_url><user_registered>
+												<display_name></display_name>
+												<data_type>datetime</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_registered><user_activation_key>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_activation_key><user_status>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </user_status><display_name>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </display_name></query_string_vars></function><function id="( your function UAACS id)" name="spo_users_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_users/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_users_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_users/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_yoast_seo_links_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_links/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_yoast_seo_links_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_links/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </id><url>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </url><post_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </post_id><target_post_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </target_post_id><type>
+												<display_name></display_name>
+												<data_type>varchar</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </type></query_string_vars></function><function id="( your function UAACS id)" name="spo_yoast_seo_links_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_links/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_yoast_seo_links_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_links/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_yoast_seo_meta_FEED(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>Search</display_name>
+										<data_type>bool</data_type>
+										<help_text>Please provide true or false</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Limit</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type value</help_text>
+										<editability>true</editability>
+										</parameter>
+										<parameter>
+										<display_name>Offset</display_name>
+										<data_type>int</data_type>
+										<help_text>Please provide int type values</help_text>
+										<editability>true</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>file</display_name>
+										<data_type>int</data_type>
+										<help_text>view file name to load</help_text>
+										<editability>true</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>Format</display_name>
+										<data_type>string</data_type>
+										<help_text>format of the out put XML or HTML</help_text>
+										<editability>true</editability>
+										</parameter>
+			  							<parameter>
+										<display_name>collist</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column filter to the view columns are sent as
+		 											col01:col02:...:coln and is pased to view as an array of col names</help_text>
+										<editability>false</editability>
+										</parameter>
+										<parameter>
+										<display_name>widths</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the column widths to the view, widths are sent as col1=10:col2=25.... to the controller
+													controller will pass the width as array to the view
+		 											array("col1"=>10,"col2"=>25)</help_text>
+										<editability>false</editability>
+										</parameter>
+			  						    <parameter>
+										<display_name>visibilityList</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the visibility list to the view, list should be sent col1=true:col2=false ... to the controller
+		 											and the contorller will process the param and construct an array as
+		 											array(col1=>true,col2=>true,col3=>false)) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+								  		<parameter>
+										<display_name>cellStyles</display_name>
+										<data_type>string</data_type>
+										<help_text>pass the cell styles list to the view, list should be sent text-align:center_text-align:center_text-align:left ... to the controller
+	     										   and the contorller will process the param and construct an array as
+	     										   array(text-align:center,text-align:center,text-align:center) and pass it to the view</help_text>
+										<editability>false</editability>
+										</parameter>
+									</parameters><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_meta/index/true/0/0/data_feed_template/XML/</url>
+									  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_yoast_seo_meta_SAVE(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>action</display_name>
+										<data_type>string</data_type>
+										<help_text>This is the mode string, add / edit</help_text>
+										<editability>true</editability>
+										</parameter>
+									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_meta/save/add/</url>
+						  			  <url_method>post</url_method><query_string_vars><object_id>
+												<display_name></display_name>
+												<data_type>bigint</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </object_id><internal_link_count>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </internal_link_count><incoming_link_count>
+												<display_name></display_name>
+												<data_type>int</data_type>
+												<help_text></help_text>
+												<default></default>
+												<editability>false</editability>
+											  </incoming_link_count></query_string_vars></function><function id="( your function UAACS id)" name="spo_yoast_seo_meta_DELETE(replace with your UAACS function name)">
+						  <roles>(role, ids, must, be, comma, separated)</roles>
+			  						  <parameters>
+										<parameter>
+										<display_name>key</display_name>
+										<data_type>String</data_type>
+										<help_text>Provide the key as key:key_value</help_text>
+										<editability>true</editability>
+										</parameter>
+ 									  </parameters><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_meta/delete/</url>
+						  <url_method>get</url_method><query_string_vars/></function><function id="( your function UAACS id)" name="spo_yoast_seo_meta_DROPDOWN(replace with your UAACS function name)">
+			  						  <roles>(role, ids, must, be, comma, separated)</roles>
+									  <parameters/><url>http://www.bizydads.com/HOF/index.php/spo_yoast_seo_meta/createDropdown/</url>
+						  <url_method>get</url_method><query_string_vars/></function></functions></api>

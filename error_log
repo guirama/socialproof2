@@ -1,0 +1,10 @@
+[03-Feb-2020 12:22:22 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/bizydads/public_html/indunil/hof/application/views/home.php on line 48
+[05-Feb-2020 12:06:52 UTC] PHP Parse error:  syntax error, unexpected '|' in /home/bizydads/public_html/indunil/hof/application/controllers/home.php on line 57
+[07-Feb-2020 09:49:35 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/bizydads/public_html/indunil/hof/application/controllers/home.php on line 159
+[07-Feb-2020 14:03:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bizydads/public_html/indunil/hof/application/views/home.php on line 207
+[12-Feb-2020 06:55:23 UTC] PHP Fatal error:  Call to undefined function getCustomReviews() in /home/bizydads/public_html/indunil/hof/application/helpers/reviews_helper.php on line 10
+[12-Feb-2020 07:34:03 UTC] PHP Fatal error:  Call to undefined function getCustomReviews() in /home/bizydads/public_html/indunil/hof/application/helpers/reviews_helper.php on line 11
+[12-Feb-2020 11:04:38 UTC] PHP Fatal error:  Call to a member function get_data() on null in /home/bizydads/public_html/indunil/hof/application/controllers/spo_hof_banners.php on line 988
+[12-Feb-2020 12:10:08 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/bizydads/public_html/indunil/hof/application/controllers/spo_hof_banners.php on line 996
+[13-Feb-2020 12:23:37 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/bizydads/public_html/indunil/hof/application/controllers/spo_hof_banners.php on line 1080
+[13-Feb-2020 13:36:09 UTC] PHP Fatal error:  Call to undefined function get_SlugFromURL() in /home/bizydads/public_html/indunil/hof/application/controllers/spo_hof_banners.php on line 1027

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>HOF</title>
+    <parser>
+        <target>docs/phpdoc/parsed</target>
+        <encoding>utf-8</encoding>
+        <markers>
+            <item>TODO</item>
+            <item>FIXME</item>
+        </markers>
+        <extensions>
+            <extension>php</extension>
+            <extension>php3</extension>
+            <extension>phtml</extension>
+        </extensions>
+        <visibility></visibility>
+    </parser>
+    <transformer>
+        <target>docs/phpdoc</target>
+    </transformer>
+    <logging>
+        <level>warn</level>
+        <paths>
+            <default>{APP_ROOT}/data/log/{DATE}.log</default>
+            <errors>{APP_ROOT}/data/log/{DATE}.errors.log</errors>
+        </paths>
+    </logging>
+    <transformations>
+        <template name="responsive-twig" />
+    </transformations>
+    <files>
+        <file>application/config/config.php</file>
+        <directory>.</directory>
+        <ignore>application/cache/*</ignore>
+        <ignore>application/config/*</ignore>
+        <ignore>application/cache/*</ignore>
+        <ignore>application/core/*</ignore>
+        <ignore>application/errors/*</ignore>
+        <ignore>application/helpers/*</ignore>
+        <ignore>application/hooks/*</ignore>
+        <ignore>application/languages/*</ignore>
+        <ignore>application/libraries/*</ignore>
+        <ignore>application/logs/*</ignore>
+        <ignore>application/third_party/*</ignore>
+        <ignore>codetemplates/*</ignore>
+        <ignore>CI/*</ignore>
+        <ignore>css/*</ignore>
+        <ignore>documents/*</ignore>
+        <ignore>img/*</ignore>
+        <ignore>js/*</ignore>
+        <ignore>plugins/*</ignore>
+        <ignore>seclib/*</ignore>
+        <ignore>tmp/*</ignore>
+    </files>
+</phpdoc>
